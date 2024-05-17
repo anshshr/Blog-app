@@ -251,7 +251,7 @@ class DashboardState extends State<Dashboard> {
             size: 20,
           )),
       appBar: AppBar(
-        title: const Text('Dashboard Page'),
+        title: const Text('B L O G S'),
         backgroundColor: Colors.deepPurple[100],
         leading: GestureDetector(
             onTap: () async {
