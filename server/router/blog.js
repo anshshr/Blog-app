@@ -36,6 +36,8 @@ blog_router.get('/api/getblogs', async function (req, res) {
         res.status(500).json({ msg: 'something error occured while reading the posts', error: error.messasge });
     }
 });
+
+//reading the blogs by id
 blog_router.get('/api/getblogs/:id', async function (req, res) {
     try {
         const blogs_by_id = await blog.findOne({ _id: req.params.id });
